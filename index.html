@@ -34,31 +34,31 @@ layout: none
       flex-direction: column;
       align-items: flex-start;
       max-width: 800px;
+      width: 100%;
     }
 
     .top {
       display: flex;
       flex-direction: row;
       align-items: center;
+      width: 100%;
     }
 
     .logo {
-      max-width: 160px;
-      width: 30vw;
-      height: auto;
+      height: 6.5rem;
+      width: auto;
       margin-right: 40px;
+      flex-shrink: 0;
     }
 
     .text {
-      text-align: left;
       font-size: 1.5rem;
       line-height: 2.2rem;
     }
 
     .linkedin {
-      margin-top: 20px;
+      margin-top: 24px;
       font-size: 1rem;
-      align-self: center;
     }
 
     .linkedin a {
@@ -77,6 +77,18 @@ layout: none
       padding: 20px;
       font-size: 0.9rem;
       color: #555;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo {
+        margin: 0 0 20px 0;
+        height: 5rem;
+      }
     }
   </style>
 </head>
@@ -94,11 +106,19 @@ layout: none
       <div class="linkedin">
         <a href="https://www.linkedin.com/in/tommyqpeng" target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
-          Connect on LinkedIn
+          Connect with me on LinkedIn
         </a>
       </div>
     </div>
   </div>
+
+  <div class="footer">
+    ABN 12 345 678 901<br>
+    Melbourne, VIC, Australia
+  </div>
+</body>
+</html>
+
 
   <div class="footer">
     ABN 18 688 644 966<br>
