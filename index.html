@@ -52,9 +52,32 @@ layout: none
       line-height: 2.2rem;
     }
 
+    .project-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background-color: #0077b5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+      font-size: 1rem;
+    }
+
+    .badge:hover {
+      background-color: #005e93;
+    }
+
     .linkedin {
       text-align: center;
-      margin-top: 32px;
+      margin-top: 24px;
       font-size: 1rem;
     }
 
@@ -93,6 +116,12 @@ layout: none
         font-size: 1.3rem;
         text-align: center;
       }
+
+      .project-links {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -107,16 +136,26 @@ layout: none
           <div>For your success</div>
         </div>
       </div>
-      <div class="linkedin">
-        <a href="https://consultingtraining.quantifai.com.au" target="_blank">
-           AI-Enabled Consulting Case Interview Training
+
+      <div class="project-links">
+        <a href="https://consultingtraining.quantifai.com.au" target="_blank" class="badge">
+          AI-Enabled Case Interview Review
+        </a>
+        <a href="https://survey.senstride.com.au" target="_blank" class="badge">
+          The Great Floor Survey
         </a>
       </div>
+
       <div class="linkedin">
-        <a href="https://www.linkedin.com/in/tommyqpeng" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+  	<a href="https://www.linkedin.com/in/tommyqpeng" target="_blank">
+    	  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
           Connect on LinkedIn
         </a>
+        <div style="margin-top: 8px; font-size: 0.95rem; color: #111;">
+          <a href="mailto:contact@quantifai.com.au" style="color: #0077b5; text-decoration: none;">
+            contact@quantifai.com.au
+          </a>
+        </div>
       </div>
     </div>
   </div>
