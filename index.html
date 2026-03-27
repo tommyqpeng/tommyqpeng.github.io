@@ -8,18 +8,21 @@ layout: none
   <meta charset="UTF-8" />
   <title>Quantifai - Purposeful Data-Driven Solutions</title>
   <link rel="icon" type="image/svg+xml" href="/assets/quantifai_icon.svg">
-  <meta name="description" content="Quantifai builds data-driven AI-enabled tools to empower decision-makers.">
-  <meta name="keywords" content="Quantifai, AI, consulting, data-driven, artificial intelligence, machine learning, Melbourne, Australia, Tommy Peng, fNIRS">
+  <meta name="description" content="Quantifai builds purposeful AI-enabled and data-driven tools for education, research, and decision support.">
+  <meta name="keywords" content="Quantifai, AI, education technology, edtech, data-driven, artificial intelligence, machine learning, Melbourne, Australia, Tommy Peng">
   <meta name="author" content="Quantifai">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      min-height: 100%;
       font-family: sans-serif;
       background: #ffffff;
       color: #111;
+    }
+
+    body {
       display: flex;
       flex-direction: column;
     }
@@ -29,15 +32,21 @@ layout: none
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 40px 20px;
+      padding: 48px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
     }
 
     .row {
       display: flex;
       flex-direction: row;
-      align-items: center; 
-      max-width: 800px;
+      align-items: center;
+      max-width: 900px;
       width: 100%;
+      margin: 0 auto 32px auto;
     }
 
     .logo {
@@ -56,11 +65,24 @@ layout: none
       line-height: 2.2rem;
     }
 
+    .subtext {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      line-height: 1.7rem;
+      color: #333;
+      text-align: center;
+    }
+
+    .subtext p {
+      margin: 0 0 16px 0;
+    }
+
     .project-links {
       display: flex;
       justify-content: center;
       gap: 16px;
-      margin-top: 32px;
+      margin-top: 28px;
       flex-wrap: wrap;
     }
 
@@ -73,6 +95,7 @@ layout: none
       font-weight: 500;
       transition: background-color 0.2s ease;
       font-size: 1rem;
+      display: inline-block;
     }
 
     .badge:hover {
@@ -81,7 +104,7 @@ layout: none
 
     .footer {
       text-align: center;
-      padding: 20px;
+      padding: 24px 20px;
       font-size: 0.9rem;
       color: #555;
     }
@@ -102,6 +125,12 @@ layout: none
         align-items: center;
         font-size: 1.3rem;
         text-align: center;
+        line-height: 2rem;
+      }
+
+      .subtext {
+        font-size: 1rem;
+        line-height: 1.6rem;
       }
 
       .project-links {
@@ -114,27 +143,32 @@ layout: none
 </head>
 <body>
   <div class="main">
-    <div>
+    <div class="container">
       <div class="row">
         <img class="logo" src="/assets/quantifai_logo.svg" alt="Quantifai Logo" />
         <div class="text-block">
           <div>Purposeful data-driven solutions</div>
-          <div>Developed by experts</div>
-          <div>For your success</div>
+          <div>AI-enabled tools developed by experts</div>
+          <div>For education, research, and decision-making</div>
         </div>
       </div>
 
-<div class="project-links">
-  <a href="/about/" target="_blank" class="badge">
-    About Us
-  </a>
-</div>
+      <div class="subtext">
+        <p>
+          Quantifai develops practical, data-driven software and AI-enabled tools that help people make better decisions.
+          Our work includes solutions in education technology, applied artificial intelligence, and research translation.
+        </p>
+        <p>
+          One of our live products is <strong>VocabTest</strong>, an English vocabulary learning and assessment platform
+          designed to support students and educators through structured digital testing and reporting.
+        </p>
+      </div>
 
-<div class="project-links">
-  <a href="mailto:contact@quantifai.com.au" class="badge">
-    Contact Us
-  </a>
-</div>
+      <div class="project-links">
+        <a href="/about/" target="_blank" class="badge">About Us</a>
+        <a href="https://vocabtest.quantifai.com.au" target="_blank" class="badge">Visit VocabTest</a>
+        <a href="mailto:contact@quantifai.com.au" class="badge">Contact Us</a>
+      </div>
     </div>
   </div>
 
